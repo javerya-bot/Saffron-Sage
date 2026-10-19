@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Discover fresh food, delicious flavors and a welcoming dining experience at Saffron & Sage.">
+  <meta name="theme-color" content="#faf6ef">
+
+  <title>Saffron &amp; Sage | Restaurant</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="#home" class="logo">Saffron <span>&amp; Sage.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      type="button" aria-label="Open navigation menu"
+      aria-expanded="false" aria-controls="navLinks">
+      ☰
+    </button>
+
+    <nav id="navLinks" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#contact" class="nav-btn">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">FRESH FLAVORS · WARM MOMENTS</p>
+
+        <h1>Good Food.<br>Beautiful <span>Moments.</span></h1>
+
+        <p class="hero-description">
+          Discover thoughtfully prepared dishes, fresh ingredients,
+          and a welcoming atmosphere made for sharing.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Explore Our Menu ↗</a>
+          <a href="#reservation" class="btn btn-outline">Book a Table</a>
+        </div>
+
+        <p class="hero-note">✦ Fresh ingredients · Made with care</p>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+          alt="Elegant restaurant interior"
+          fetchpriority="high">
+
+        <div class="image-badge">
+          <span aria-hidden="true">✦</span>
+          <div>
+            <strong>Made Fresh</strong>
+            <small>With care every day</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+          alt="Freshly prepared restaurant food"
+          loading="lazy">
+
+        <span class="image-label">Fresh. Flavorful. Memorable.</span>
+      </div>
+
+      <div class="about-content">
+        <p class="eyebrow">OUR STORY</p>
+        <h2>Food Made with<br><span>Heart &amp; Soul.</span></h2>
+
+        <p>
+          At Saffron &amp; Sage, we believe great food brings people
+          together. Our menu celebrates fresh ingredients, rich flavors,
+          and the joy of sharing a meal.
+        </p>
+
+        <p>
+          Whether it is a relaxed lunch or a special evening,
+          we want every visit to feel warm and memorable.
+        </p>
+
+        <a href="#menu" class="text-link">Discover our menu ↗</a>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">A TASTE OF OUR KITCHEN</p>
+        <h2>Guest <span>Favorites.</span></h2>
+        <p>Explore a few delicious dishes from our sample menu.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="food-card">
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+            alt="Classic burger with fresh toppings"
+            loading="lazy">
+
+          <div class="food-info">
+            <div class="food-title">
+              <h3>Classic Burger</h3>
+              <strong>Rs. 850</strong>
+            </div>
+            <p>A juicy burger with fresh vegetables and special sauce.</p>
+            <a href="#reservation">Ask about this dish ↗</a>
+          </div>
+        </article>
+
+     
+        <article class="food-card">
+          <img
+            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+            alt="Pasta served with herbs"
+            loading="lazy">
+
+          <div class="food-info">
+            <div class="food-title">
+              <h3>Herb Pasta</h3>
+              <strong>Rs. 950</strong>
+            </div>
+            <p>Comforting pasta with herbs and a rich, savory flavor.</p>
+            <a href="#reservation">Ask about this dish ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="menu-disclaimer">
+        Demo menu and prices. Actual items and prices may vary.
+      </p>
+    </section>
+
+    <section class="reservation section" id="reservation">
+      <div class="reservation-content">
+        <p class="eyebrow">YOUR TABLE AWAITS</p>
+        <h2>Make Your Visit<br><span>Extra Special.</span></h2>
+
+        <p>
+          Planning a dinner or a get-together?
+          Share your details to prepare a reservation request.
+        </p>
+
+        <p class="reservation-detail">
+          ✦ A welcoming space for every occasion
+        </p>
+      </div>
+
+      <form id="bookingForm" class="booking-form">
+        <h3>Request a Table</h3>
+
+        <label for="guestName">Your Name</label>
+        <input
+          id="guestName"
+          name="name"
+          type="text"
+          placeholder="Enter your name"
+          autocomplete="name"
+          required>
+
+        <label for="guestEmail">Email Address</label>
+        <input
+          id="guestEmail"
+          name="email"
+          type="email"
+          placeholder="you@example.com"
+          autocomplete="email"
+          required>
+
+        <div class="form-row">
+          <div>
+            <label for="bookingDate">Preferred Date</label>
+            <input id="bookingDate" name="date" type="date" required>
+          </div>
+
+          <div>
+            <label for="guestCount">Guests</label>
+            <select id="guestCount" name="guests" required>
+              <option value="1">1 person</option>
+              <option value="2" selected>2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5 people</option>
+              <option value="6+">6 or more</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="bookingMessage">Special Request (Optional)</label>
+        <textarea
+          id="bookingMessage"
+          name="message"
+          placeholder="Tell us about any special requests"></textarea>
+
+        <button class="btn btn-primary submit-btn" type="submit">
+          Submit Request ↗
+        </button>
+
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+        <small>
+          Demo only: this form does not send a real reservation.
+        </small>
+      </form>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow">COME SAY HELLO</p>
+
+      <h2>Let's Make Your Next Meal <span>Memorable.</span></h2>
+
+      <p>We look forward to welcoming you.</p>
+
+      
+<a href="#reservation" class="btn btn-primary">
+  Explore Our Menu ↗
+</a>
+<p class="contact-note">
+  Restaurant website concept created for portfolio demonstration.
+</p>
+
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="logo">Saffron <span>&amp; Sage.</span></a>
+    <p>Good food. Warm moments. Made with care.</p>
+    <p>© <span id="year"></span> Saffron &amp; Sage. Demo website.</p>
+  </footer>
+</body>
+</html>
